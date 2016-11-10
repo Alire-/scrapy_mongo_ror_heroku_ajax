@@ -1,0 +1,32 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Deal name:</strong>
+  <%= @deal.deal_name %>
+</p>
+
+<p>
+  <strong>Rest name:</strong>
+  <%= @deal.rest_name %>
+</p>
+
+<p>
+  <strong>Disc info:</strong>
+  <%= @deal.disc_info %>
+</p>
+
+<p>
+  <strong>List price:</strong>
+  <%= @deal.list_price %>
+</p>
+
+<p>
+  <strong>Pic url:</strong>
+  <%= @deal.pic_url %>
+</p>
+<p>
+  <img height="360px" width="480px" src=<%= @deal.pic_url %>>
+</p>
+
+<%= link_to 'Edit', edit_deal_path(@deal) %> |
+<%= link_to 'Back', deals_path %>
